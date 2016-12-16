@@ -6,6 +6,7 @@ RUN apt-get install -y nginx vim curl
 
 COPY etc/nginx /etc/nginx
 COPY var/www/default/html /var/www/default/html
+COPY var/www/html/robots.txt /var/www/html/robots.txt
 
 EXPOSE 80
 
