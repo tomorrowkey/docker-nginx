@@ -1,7 +1,7 @@
 FROM ubuntu:16.10
 MAINTAINER tomorrowkey
 
-RUN apt-get update && apt-get upgrade
+RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y nginx vim curl
 
 COPY etc/nginx /etc/nginx
