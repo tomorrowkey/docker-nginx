@@ -1,8 +1,9 @@
-FROM ubuntu:16.10
-MAINTAINER tomorrowkey
+FROM alpine:3.5
+MAINTAINER tomorrowkey@gmail.com
 
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y nginx vim curl
+USER root
+
+RUN apk add --no-cache nginx
 
 COPY etc/nginx /etc/nginx
 COPY var/www/default/html /var/www/default/html
