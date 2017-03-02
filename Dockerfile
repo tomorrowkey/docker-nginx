@@ -11,4 +11,4 @@ COPY var/www/html/robots.txt /var/www/html/robots.txt
 
 EXPOSE 80
 
-CMD ["/usr/sbin/nginx","-g","daemon off;"]
+CMD ["/usr/sbin/nginx"]
